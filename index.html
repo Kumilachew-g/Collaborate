@@ -7,6 +7,153 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      Microverse Trials Collaborative project how we can improve from
+      freeCodeCamp
+    </p>
+    <div id="container">
+      <form action="submit" id="survey-form">
+        <div class="div-form">
+          <div class="div-sub">
+            <labe id="name-label">Name:</labe>
+          </div>
+          <div class="div-sub2">
+            <input
+              width="100"
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+        </div>
+        <div class="div-form">
+          <div class="div-sub">
+            <label for="email" id="email-label">Email:</label>
+          </div>
+          <div class="div-sub2">
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+        </div>
+        <div class="div-form">
+          <div class="div-sub">
+            <label for="age" id="number-label">Age:</label>
+          </div>
+          <div class="div-sub2">
+            <input
+              type="number"
+              id="number"
+              min="18"
+              max="99"
+              placeholder="Select Your Age"
+            />
+          </div>
+        </div>
+        <div class="div-form">
+          <div class="div-sub">
+            <label for="currentPos"
+              >Which option describes your current role?</label
+            >
+          </div>
+          <div class="div-sub2">
+            <select name="" id="dropdown" aria-placeholder="Select an option">
+              <option disabled selected value>Select an option</option>
+              <option value="student">Student</option>
+              <option value="fulltimejob">Full Time Job</option>
+              <option value="fulltimelearner">Full Time Learner</option>
+              <option value="prefernot">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="div-form">
+          <div class="div-sub">
+            <label for="">Would you recommend feeCdodeCamp to a friend?</label>
+          </div>
+          <div class="div-sub2">
+            <input type="radio" name="radio" value="definitely" />Definitely
+            <br />
+            <input type="radio" value="radio" aria-valuemax="maybe" />Maybe
+            <br />
+            <input type="radio" name="radio" value="notsure" /> Not Sure <br />
+          </div>
+        </div>
+        <div class="div-form">
+          <div class="div-sub">
+            <label for="">What is your favoraite of freeCodeCamp?:</label>
+          </div>
+          <div class="div-sub2">
+            <select placeholder="Select an option">
+              <option disabled selected value>Select an option</option>
+              <option value="challenges">Challenges</option>
+              <option value="projects">Projects</option>
+              <option value="community">Community</option>
+              <option value="opensource">Open Source</option>
+            </select>
+          </div>
+        </div>
+        <div class="div-form">
+          <div class="div-sub">
+            <label for="future"
+              >Things that should be improved in the future(Check all that
+              apply</label
+            >
+          </div>
+          <div class="div-sub2">
+            <input type="checkbox" name="future" value="Frontend" />Front-End
+            Projects <br />
+            <input type="checkbox" name="future" value="backend" />Back-End
+            Projects <br />
+            <input type="checkbox" name="future" value="Datavis" />Data
+            Visualization<br />
+            <input type="checkbox" name="future" value="Challenges" />Challenges
+            <br />
+            <input type="checkbox" name="future" value="OpenSourcecom" />Open
+            Source Community <br />
+            <input
+              type="checkbox"
+              name="future"
+              value="Gitterhelprooms"
+            />Gitter Help Rooms <br />
+            <input type="checkbox" name="future" value="Videos" />Videos <br />
+            <input type="checkbox" name="future" value="Citymeetups" />City
+            Meetups <br />
+            <input type="checkbox" name="future" value="Wiki" />Wiki <br />
+            <input type="checkbox" name="future" value="Forum" />Forum <br />
+            <input
+              type="checkbox"
+              name="future"
+              value="Addtlcourses"
+            />Addtional Courses <br />
+          </div>
+        </div>
+        <div class="div-form">
+          <div class="div-sub">
+            <label for="">Any Comments or Suggestions?</label>
+          </div>
+          <div class="div-sub2">
+            <textarea
+              name=""
+              id="comments"
+              cols="40"
+              rows="8"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+          <br />
+        </div>
+        <div class="div-form">
+          <p>
+            <button class="button" id="submit" type="submit"></button>
+          </p>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
